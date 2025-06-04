@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viagem ao Chile</title>
+    <title>Viagem ao Uruguai</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,10 +14,11 @@
             height: 100vh;
             overflow: hidden;
         }
-/* <> */
+
         .section-control {
+            color: black;
             padding: 10px;
-            background: #2c3e50;
+            background: #ad9dca;
             text-align: center;
             display: flex;
             justify-content: center;
@@ -27,7 +28,7 @@
         .section-btn {
             padding: 8px 16px;
             border: none;
-            background: #34495e;
+            background: #7b68b8;
             color: white;
             cursor: pointer;
             border-radius: 4px;
@@ -35,11 +36,11 @@
         }
 
         .section-btn:hover {
-            background: #3d566e;
+            background: #9a86d6;
         }
 
         .section-btn.active {
-            background: #4CAF50;
+            background: #b39ddb;
         }
 
         .main-container {
@@ -50,8 +51,8 @@
 
         .menu-section {
             width: 300px;
-            background-color: #34495e;
-            color: white;
+            background-color: #d9c8f7;
+            color: gray;
             overflow-y: auto;
             transition: all 0.3s;
         }
@@ -60,10 +61,10 @@
             padding: 20px;
         }
 
-        .menu h2 {
+        .menu h3 {
             margin-top: 0;
             text-align: center;
-            color: #ecf0f1;
+            color: #f8f5ff;
         }
 
         .menu ul {
@@ -79,20 +80,20 @@
             display: block;
             padding: 10px 15px;
             background-color: #2c3e50;
-            color: #bdc3c7;
+            color: #e6e0f7;
             text-decoration: none;
             border-radius: 4px;
             transition: all 0.3s;
         }
 
         .menu a:hover {
-            background-color: #3d566e;
+            background-color: #9a86d6;
             color: white;
         }
 
         .menu a.active {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #b39ddb;
+            color: gray;
         }
 
         #logoImg1 {
@@ -155,101 +156,50 @@
 
 
 <div class="section-control">
-    <button class="section-btn active" data-section="section2">Por semana</button>
-    <button class="section-btn " data-section="section1">Grandes trechos</button>
+<h2>Viagem ao Uruguai 2025</h2>
 </div>
 
 <div class="main-container">
     <!-- Seção 1 (Grandes trechos) -->
-    <div class="menu-section" id="section1"  style="display:none;">
+    <div class="menu-section active" id="section1" >
         <div class="menu">
-            <h2>Viagem ao Chile</h2>
-            <h3>Grandes trechos</h3>
+            <h2>Dias de Viagem</h2>
             <ul>
-                <li><a href="#" class="active" data-iframe="iframe1">João Pessoa a São Paulo</a></li>
-                <li><a href="#" data-iframe="iframe2">São Paulo a Com. Rivadavia</a></li>
-                <li><a href="#" data-iframe="iframe3">Com.Rivadavia a Bariloche</a></li>
-                <li><a href="#" data-iframe="iframe4">Bariloche a São Bendo do Sul</a></li>
-            </ul>
-            <img src="./lobosRodas1.png" id="logoImg1" alt="Logo">
+                <li><a href="#" class="active" data-iframe="iframe1">Dia 01</a></li>
+                <li><a href="#" data-iframe="iframe2">Dia 02</a></li>
+                <li><a href="#" data-iframe="iframe3">Dia 03</a></li>
+                <li><a href="#" data-iframe="iframe4">Dia 04</a></li>
+                <li><a href="#" data-iframe="iframe5">Dia 05</a></li>
+                </ul>
+            <img src="./ppg.png" id="logoImg1" alt="Logo">
         </div>
     </div>
 
     <!-- Seção 2 (Por semana) -->
-<div class="menu-section active" id="section2">
-    <div class="menu">
-        <h2>Viagem ao Chile</h2>
-        <h3>Rotas por Semana</h3>
-        <div class="menu-columns">
-            <ul class="menu-column">
-                <li><a href="#" class="active" data-iframe="alt-iframe1">Semana 1</a></li>
-                <li><a href="#" data-iframe="alt-iframe2">Semana 2</a></li>
-                <li><a href="#" data-iframe="alt-iframe3">Semana 3</a></li>
-                <li><a href="#" data-iframe="alt-iframe4">Semana 4</a></li>
-                <li><a href="#" data-iframe="alt-iframe5">Semana 5</a></li>
-            </ul>
-            <ul class="menu-column">
-                <li><a href="#" data-iframe="alt-iframe6">Semana 6</a></li>
-                <li><a href="#" data-iframe="alt-iframe7">Semana 7</a></li>
-                <li><a href="#" data-iframe="alt-iframe8">Semana 8</a></li>
-                <li><a href="#" data-iframe="alt-iframe9">Semana 9</a></li>
-                <li><a href="#" data-iframe="alt-iframe10">Semana 10</a></li>
-            </ul>
-        </div>
-        <img  src="./lobosRodas1.png" id="logoImg2" alt="Logo">
-    </div>
+<div class="menu-section" id="section2"  style="display:none;">
 </div>
 
     <!-- Área de conteúdo principal -->
     <div class="content">
         <!-- Iframes da seção 1 -->
         <div class="iframe-container active" id="iframe1">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d15780785.327332022!2d-51.43627614378602!3d-15.062999308281288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e6!4m5!1s0x7ace839019aa3d7%3A0x6e414a9c6d26db34!2sJo%C3%A3o%20Pessoa%2C%20PB!3m2!1d-7.1188351999999995!2d-34.8814339!4m5!1s0x70146fcd6688849%3A0xee2c725b43e07653!2zTWFjZWnDsywgQUw!3m2!1d-9.6660417!2d-35.735216699999995!4m5!1s0x71ab04015be27cd%3A0x804434fd92ec3b36!2sAracaju%2C%20SE!3m2!1d-10.9265404!2d-37.0731147!4m5!1s0x716112050422ebd%3A0xf71c84369573db9d!2sSalvador%2C%20BA!3m2!1d-12.9777378!2d-38.5016363!4m5!1s0x7390a5e52da7c25%3A0x14934677df56b876!2sCacau%20do%20C%C3%A9u%20Chocolates%20-%20Centro%20de%20Ilh%C3%A9us%2C%20Av.%20Soares%20Lopes%2C%20508%20-%20Centro%2C%20Ilh%C3%A9us%20-%20BA%2C%2045653-005!3m2!1d-14.7973704!2d-39.032101499999996!4m5!1s0x73546a9c0f417ef%3A0x998e8c1f371f1c5b!2sTeixeira%20de%20Freitas%2C%20BA!3m2!1d-17.5400307!2d-39.7421813!4m5!1s0xb83d5d85374ee9%3A0x97595e7ea70ed809!2zVml0w7NyaWEsIEVT!3m2!1d-20.3196711!2d-40.3385246!4m5!1s0x97073d3c0566d5%3A0x5115f34a20c5ad67!2sCabo%20Frio%2C%20RJ!3m2!1d-22.8868925!2d-42.0266568!4m5!1s0x9d6d04d08d0dd9%3A0xea35e93f7a8ac64d!2sParaty%2C%20RJ!3m2!1d-23.2197106!2d-44.7167452!4m5!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!3m2!1d-23.555771399999998!2d-46.6395571!5e0!3m2!1spt-BR!2sbr!4v1749021825031!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d3435963.2527900795!2d-59.285461!3d-32.75424699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x959f87e117a691e3%3A0x223b5948614efdd0!2s5X7M%2B5G8%20Aeropuerto%20Internacional%20De%20Carrasco%2C%20Ruta%20101-Capitan%20Juan%20Antonio%20Artigas%2C%2014000%20Ciudad%20de%20la%20Costa%2C%20Departamento%20de%20Canelones%2C%20Uruguai!3m2!1d-34.837096599999995!2d-56.016179799999996!4m5!1s0x95a6a0108419d13f%3A0x5c8974ae890184e3!2sTrinidad%20Flores%2C%20Uruguai!3m2!1d-33.5141767!2d-56.9005544!4m5!1s0x95addd2c075a3b21%3A0x43fa2ad6b4124a96!2sHotel%20Eldorado%2C%20Av.%20Sarandi%2020%2C%2050000%20Salto%2C%20Departamento%20de%20Salto%2C%20Uruguai!3m2!1d-31.3876112!2d-57.9668728!5e0!3m2!1spt-BR!2sbr!4v1749051660480!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="iframe-container" id="iframe2">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m82!1m12!1m3!1d13512139.896138526!2d-67.76405073789147!3d-34.226534736223634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m67!3e6!4m5!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!3m2!1d-23.555771399999998!2d-46.6395571!4m5!1s0x94ddd4985340f3b7%3A0x693099358d9f99d7!2sS%C3%A3o%20Bento%20do%20Sul%2C%20SC!3m2!1d-26.2497682!2d-49.3839372!4m5!1s0x951c3b525635c503%3A0x903e94cea10ccfe6!2sBento%20Gon%C3%A7alves%2C%20RS%2C%2095700-000!3m2!1d-29.1667089!2d-51.5169861!4m5!1s0x950cde68b89349c7%3A0x81075632ba027491!2zQ2h1w60sIFJTLCA5NjI1NS0wMDA!3m2!1d-33.6894971!2d-53.4485314!4m5!1s0x9575059ec8c40bbd%3A0x9bdd0183c2d3cf93!2sPunta%20del%20Este%2C%20Maldonado%2C%20Uruguai!3m2!1d-34.9360588!2d-54.9378104!4m5!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideu%2C%20Uruguai!3m2!1d-34.9055016!2d-56.1851147!4m5!1s0x95a3125d92894bf5%3A0x43fb94606930d52!2sRadisson%20Colonia%20del%20Sacramento!3m2!1d-34.4691421!2d-57.848529!4m5!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires!3m2!1d-34.6036739!2d-58.3821215!4m5!1s0x95edbcabdc1302bd%3A0x76d1d88d241e7a11!2sBah%C3%ADa%20Blanca%2C%20Buenos%20Aires%2C%20Argentina!3m2!1d-38.7183177!2d-62.2663478!4m5!1s0xbe02355e87a2ead1%3A0x1e890d2810b44382!2sPuerto%20Madryn%2C%20Chubut%2C%20Argentina!3m2!1d-42.763621699999995!2d-65.03483109999999!4m5!1s0xbde4544de04824f5%3A0x5d9f7f8e3bb8ee4b!2sComodoro%20Rivadavia%2C%20Chubut%2C%20Argentina!3m2!1d-45.8656149!2d-67.4822429!5e0!3m2!1spt-BR!2sbr!4v1749026199217!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d108902.41688203033!2d-57.975354916161585!3d-31.463669539470803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m5!1s0x95addd2c075a3b21%3A0x43fa2ad6b4124a96!2sHotel%20Eldorado%2C%2020%20Sarand%C3%AD%2C%20Salto%2050000%2C%20Uruguai!3m2!1d-31.3876112!2d-57.9668728!4m3!3m2!1d-31.539903!2d-57.833577999999996!4m5!1s0x95ae77218129363b%3A0x2f056d6d9074f765!2sCentro%20Mariano%20de%20Aurora%2C%20Paysand%C3%BA%2C%20Uruguai!3m2!1d-31.5400609!2d-57.833585899999996!5e0!3m2!1spt-BR!2sbr!4v1749051616963!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
         <div class="iframe-container" id="iframe3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m82!1m12!1m3!1d11047265.940498315!2d-80.85477412165083!3d-47.46874552721385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m67!3e6!4m5!1s0xbde4544de04824f5%3A0x5d9f7f8e3bb8ee4b!2sComodoro%20Rivadavia%2C%20Chubut%2C%20Argentina!3m2!1d-45.8656149!2d-67.4822429!4m5!1s0xbdb6f952b21c66e5%3A0xab7c41f247647102!2sR%C3%ADo%20Gallegos%2C%20Santa%20Cruz%2C%20Argentina!3m2!1d-51.623048499999996!2d-69.2168291!4m5!1s0xbc4c22b5bad109bf%3A0x5498473dba43ebfc!2sUshuaia%2C%20V9410%2C%20Terra%20do%20Fogo%2C%20Argentina!3m2!1d-54.807611599999994!2d-68.30584089999999!4m5!1s0xbc52ca58b309cc21%3A0xfa616a8b65456916!2sPunta%20Arenas!3m2!1d-53.1633778!2d-70.90770499999999!4m5!1s0xbda51b0183dbaf07%3A0xbd9f2657451ace58!2sParque%20Nacional%20Torres%20del%20Paine!3m2!1d-50.9423262!2d-73.4067879!4m5!1s0xbdafe7e2d70d725b%3A0x8fc7c55d2a5eba9f!2sPuerto%20Natales!3m2!1d-51.726931799999996!2d-72.5068209!4m5!1s0xbdbb0cc0138f62cb%3A0x30d4035d88e4dc69!2sEl%20Calafate%2C%20Santa%20Cruz%2C%20Argentina!3m2!1d-50.337969!2d-72.2647982!4m5!1s0xbdbd03fe92914231%3A0xc4be5aa754aefc!2sEl%20Chalt%C3%A9n%2C%20Santa%20Cruz%2C%20Argentina!3m2!1d-49.3314941!2d-72.886325!4m5!1s0x961dac39e7401099%3A0x7778716e39146c20!2sEsquel%2C%20Chubut%2C%20Argentina!3m2!1d-42.909528099999996!2d-71.31431169999999!4m5!1s0x961dbbc323173289%3A0x99675354e0415645!2sTrevelin%2C%20Chubut%2C%20Argentina!3m2!1d-43.0888123!2d-71.4625883!4m5!1s0x961a7b1520c860e5%3A0x8210ae97cb7b9a65!2sBariloche%2C%20R%C3%ADo%20Negro%2C%20Argentina!3m2!1d-41.1334722!2d-71.3102778!5e0!3m2!1spt-BR!2sbr!4v1749026863998!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="iframe-container" id="iframe4">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d13680326.618506767!2d-71.62529517153105!3d-33.16363539887837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e6!4m5!1s0x961a7b1520c860e5%3A0x8210ae97cb7b9a65!2sBariloche%2C%20R%C3%ADo%20Negro%2C%20Argentina!3m2!1d-41.1334722!2d-71.3102778!4m5!1s0x96110e743605d0c7%3A0x71c43ffb1c66bc3a!2sSan%20Mart%C3%ADn%20de%20Los%20Andes!3m2!1d-40.157210299999996!2d-71.3524436!4m5!1s0x96147f42351988d1%3A0x3c5c238b02dc5935!2zUHVjw7NuLCBQdWNvbiwgQ2hpbGU!3m2!1d-39.278114699999996!2d-71.96930379999999!4m5!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Chile!3m2!1d-33.448889699999995!2d-70.6692655!4m5!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza!3m2!1d-32.8894587!2d-68.8458386!4m5!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmEsIEPDs3Jkb3ZhLCBBcmdlbnRpbmE!3m2!1d-31.420083299999998!2d-64.1887761!4m5!1s0x95addd27e22982a9%3A0x68fc0fac8ca73bc7!2sSalto%2C%2050000%20Salto%2C%20Uruguai!3m2!1d-31.3879469!2d-57.961186999999995!4m5!1s0x94fe9091a97f35f1%3A0x5f576c0ad8e18ca8!2sSanto%20%C3%82ngelo%2C%20RS!3m2!1d-28.3001866!2d-54.2658317!4m5!1s0x94ddd4985340f3b7%3A0x693099358d9f99d7!2sS%C3%A3o%20Bento%20do%20Sul%2C%20SC!3m2!1d-26.2497682!2d-49.3839372!5e0!3m2!1spt-BR!2sbr!4v1749027142929!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d3421864.6546448036!2d-59.78317284275948!3d-33.1178977818558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x95add91bb53ced41%3A0x99fac63812e86675!2sGrotto%20of%20Padre%20Pio%2C%20G4C7%2B8FM%2C%2050000%20Daym%C3%A1n%2C%20Departamento%20de%20Paysand%C3%BA%2C%20Uruguai!3m2!1d-31.479165799999997!2d-57.8863163!4m5!1s0x95addd2c075a3b21%3A0x43fa2ad6b4124a96!2sHotel%20Eldorado%2C%20Av.%20Sarandi%2020%2C%2050000%20Salto%2C%20Departamento%20de%20Salto%2C%20Uruguai!3m2!1d-31.3876112!2d-57.9668728!4m5!1s0x95a53e0d8e33bc8d%3A0x74bc3820d25f79ac!2sMercedes%20Soriano%2C%20Uruguai!3m2!1d-33.2486338!2d-58.018760699999994!4m5!1s0x959f81c794fb9e1d%3A0x8c55deba02008e54!2sIbis%20Montevid%C3%A9u%2C%20La%20Cumparsita%201473%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguai!3m2!1d-34.913981199999995!2d-56.1824254!5e0!3m2!1spt-BR!2sbr!4v1749051776463!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <!-- Iframes da seção 2 -->
-        <div class="iframe-container" id="alt-iframe1">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d4023062.009758202!2d-39.3347701707989!3d-10.035705885771618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e6!4m5!1s0x7ace839019aa3d7%3A0x6e414a9c6d26db34!2sJo%C3%A3o%20Pessoa%2C%20PB!3m2!1d-7.1188351999999995!2d-34.8814339!4m5!1s0x70146fcd6688849%3A0xee2c725b43e07653!2zTWFjZWnDsywgQUw!3m2!1d-9.6660417!2d-35.735216699999995!4m5!1s0x71ab04015be27cd%3A0x804434fd92ec3b36!2sAracaju%2C%20SE!3m2!1d-10.9265404!2d-37.0731147!4m5!1s0x716112050422ebd%3A0xf71c84369573db9d!2sSalvador%2C%20BA!3m2!1d-12.9777378!2d-38.5016363!5e0!3m2!1spt-BR!2sbr!4v1749029674899!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="iframe-container" id="iframe4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d26173.954622447298!2d-56.19716391349253!3d-34.91286517003518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x959f81c794fb9e1d%3A0x8c55deba02008e54!2sIbis%20Montevid%C3%A9u%2C%20La%20Cumparsita%201473%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguai!3m2!1d-34.913981199999995!2d-56.1824254!4m5!1s0x959f802afe10cee1%3A0xb95846203de847c5!2sPuerta%20de%20la%20Ciudadela%2C%20Sarand%C3%AD%20700%2C%2011000%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguai!3m2!1d-34.9065218!2d-56.200817799999996!4m5!1s0x959f81712498391d%3A0x2dabbb5ef11995a!2s21%20de%20Setiembre%20%26%20Roque%20Graseras%2C%20Montevid%C3%A9u%2C%20Uruguai!3m2!1d-34.9198005!2d-56.1522149!4m5!1s0x959f81c794fb9e1d%3A0x8c55deba02008e54!2sIbis%20Montevid%C3%A9u%2C%20La%20Cumparsita%201473%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguai!3m2!1d-34.913981199999995!2d-56.1824254!5e0!3m2!1spt-BR!2sbr!4v1749052050125!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
-        <div class="iframe-container" id="alt-iframe2">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d7844263.139574536!2d-44.70905589467306!3d-16.26117793244172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e6!4m5!1s0x716112050422ebd%3A0xf71c84369573db9d!2sSalvador%2C%20BA!3m2!1d-12.9777378!2d-38.5016363!4m5!1s0x7390a3f7b1d2a77%3A0xfc575920401943ea!2zSWxow6l1cywgQkE!3m2!1d-14.7981287!2d-39.034698399999996!4m5!1s0x73546a9c0f417ef%3A0x998e8c1f371f1c5b!2sTeixeira%20de%20Freitas%2C%20BA!3m2!1d-17.5400307!2d-39.7421813!4m5!1s0xb83d5d85374ee9%3A0x97595e7ea70ed809!2zVml0w7NyaWEsIEVT!3m2!1d-20.3196711!2d-40.3385246!5e0!3m2!1spt-BR!2sbr!4v1749029801457!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="iframe-container" id="alt-iframe3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d3790430.0970768775!2d-46.13099323392065!3d-21.911785777218352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e6!4m5!1s0xb83d5d85374ee9%3A0x97595e7ea70ed809!2zVml0w7NyaWEsIEVT!3m2!1d-20.3196711!2d-40.3385246!4m5!1s0x97073d3c0566d5%3A0x5115f34a20c5ad67!2sCabo%20Frio%2C%20RJ!3m2!1d-22.8868925!2d-42.0266568!4m5!1s0x9d6d04d08d0dd9%3A0xea35e93f7a8ac64d!2sParaty%2C%20RJ!3m2!1d-23.2197106!2d-44.7167452!4m5!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!3m2!1d-23.555771399999998!2d-46.6395571!5e0!3m2!1spt-BR!2sbr!4v1749030446313!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        </div>
-        <div class="iframe-container" id="alt-iframe4">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d7137732.38555829!2d-56.70551282114938!3d-29.12867447792191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!3m2!1d-23.555771399999998!2d-46.6395571!4m5!1s0x94ddd4985340f3b7%3A0x693099358d9f99d7!2sS%C3%A3o%20Bento%20do%20Sul%2C%20SC!3m2!1d-26.2497682!2d-49.3839372!4m5!1s0x951c3b525635c503%3A0x903e94cea10ccfe6!2sBento%20Gon%C3%A7alves%2C%20RS%2C%2095700-000!3m2!1d-29.1667089!2d-51.5169861!4m5!1s0x950cde68b89349c7%3A0x81075632ba027491!2zQ2h1w60sIFJTLCA5NjI1NS0wMDA!3m2!1d-33.6894971!2d-53.4485314!4m5!1s0x9575059ec8c40bbd%3A0x9bdd0183c2d3cf93!2sPunta%20del%20Este%2C%20Maldonado%2C%20Uruguai!3m2!1d-34.9360588!2d-54.9378104!4m5!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevid%C3%A9u%2C%20Uruguai!3m2!1d-34.9055016!2d-56.1851147!5e0!3m2!1spt-BR!2sbr!4v1749034434219!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="iframe-container" id="alt-iframe5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d12053809.553699344!2d-73.49546428656824!3d-42.474019046780896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevid%C3%A9u%2C%20Uruguai!3m2!1d-34.9055016!2d-56.1851147!4m5!1s0x95a312689e9baadf%3A0xd805b8023fcf8708!2sCol%C3%B4nia%20do%20Sacramento%2C%2070000%20Col%C3%B4nia%2C%20Uruguai!3m2!1d-34.463532799999996!2d-57.8346094!4m5!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cidade%20Aut%C3%B4noma%20de%20Buenos%20Aires%2C%20Argentina!3m2!1d-34.6036739!2d-58.3821215!4m5!1s0x95edbcabdc1302bd%3A0x76d1d88d241e7a11!2sBah%C3%ADa%20Blanca%2C%20Buenos%20Aires%2C%20Argentina!3m2!1d-38.7183177!2d-62.2663478!4m5!1s0xbe02355e87a2ead1%3A0x1e890d2810b44382!2sPuerto%20Madryn%2C%20Chubut%2C%20Argentina!3m2!1d-42.763621699999995!2d-65.03483109999999!4m5!1s0xbde4544de04824f5%3A0x5d9f7f8e3bb8ee4b!2sComodoro%20Rivadavia%2C%20Chubut%2C%20Argentina!3m2!1d-45.8656149!2d-67.4822429!4m5!1s0xbdb6f952b21c66e5%3A0xab7c41f247647102!2sR%C3%ADo%20Gallegos%2C%20Santa%20Cruz%2C%20Argentina!3m2!1d-51.623048499999996!2d-69.2168291!5e0!3m2!1spt-BR!2sbr!4v1749031766227!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="iframe-container" id="alt-iframe6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d2448315.0787310572!2d-71.73336569430322!3d-53.183187212385015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e6!4m5!1s0xbdb6f952b21c66e5%3A0xab7c41f247647102!2sR%C3%ADo%20Gallegos%2C%20Santa%20Cruz%2C%20Argentina!3m2!1d-51.623048499999996!2d-69.2168291!4m5!1s0xbc4c22b5bad109bf%3A0x5498473dba43ebfc!2sUshuaia%2C%20V9410%2C%20Terra%20do%20Fogo%2C%20Argentina!3m2!1d-54.807611599999994!2d-68.30584089999999!4m5!1s0xbc52ca58b309cc21%3A0xfa616a8b65456916!2sPunta%20Arenas!3m2!1d-53.1633778!2d-70.90770499999999!5e0!3m2!1spt-BR!2sbr!4v1749031891813!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="iframe-container" id="alt-iframe7">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d2559188.147191055!2d-74.75033245857229!3d-51.2152590604864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e6!4m5!1s0xbc52ca58b309cc21%3A0xfa616a8b65456916!2sPunta%20Arenas!3m2!1d-53.1633778!2d-70.90770499999999!4m5!1s0xbda51b0183dbaf07%3A0xbd9f2657451ace58!2sParque%20Nacional%20Torres%20del%20Paine!3m2!1d-50.9423262!2d-73.4067879!4m5!1s0xbdafe7e2d70d725b%3A0x8fc7c55d2a5eba9f!2sPuerto%20Natales!3m2!1d-51.726931799999996!2d-72.5068209!4m5!1s0xbdbb0cc0138f62cb%3A0x30d4035d88e4dc69!2sEl%20Calafate%2C%20Santa%20Cruz%2C%20Argentina!3m2!1d-50.337969!2d-72.2647982!4m5!1s0xbdbd03fe92914231%3A0xc4be5aa754aefc!2sEl%20Chalt%C3%A9n%2C%20Santa%20Cruz%2C%20Argentina!3m2!1d-49.3314941!2d-72.886325!5e0!3m2!1spt-BR!2sbr!4v1749032012816!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="iframe-container" id="alt-iframe8">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d5748895.227403719!2d-76.63488192159778!3d-45.28665062136911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e6!4m5!1s0xbdbd03fe92914231%3A0xc4be5aa754aefc!2sEl%20Chalt%C3%A9n%2C%20Santa%20Cruz%2C%20Argentina!3m2!1d-49.3314941!2d-72.886325!4m5!1s0x961dac39e7401099%3A0x7778716e39146c20!2sEsquel%2C%20Chubut%2C%20Argentina!3m2!1d-42.909528099999996!2d-71.31431169999999!4m5!1s0x961dbbc323173289%3A0x99675354e0415645!2sTrevelin%2C%20Chubut%2C%20Argentina!3m2!1d-43.0888123!2d-71.4625883!4m5!1s0x961a7b1520c860e5%3A0x8210ae97cb7b9a65!2sBariloche%2C%20R%C3%ADo%20Negro%2C%20Argentina!3m2!1d-41.1334722!2d-71.3102778!5e0!3m2!1spt-BR!2sbr!4v1749032093921!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="iframe-container" id="alt-iframe9">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d13755503.750576882!2d-71.62715633754476!3d-32.678671362303604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x961a7b1520c860e5%3A0x8210ae97cb7b9a65!2sBariloche%2C%20R%C3%ADo%20Negro%2C%20Argentina!3m2!1d-41.1334722!2d-71.3102778!4m5!1s0x96110e743605d0c7%3A0x71c43ffb1c66bc3a!2sSan%20Mart%C3%ADn%20de%20Los%20Andes%2C%20Neuqu%C3%A9n%2C%20Argentina!3m2!1d-40.157210299999996!2d-71.3524436!4m5!1s0x96147f42351988d1%3A0x3c5c238b02dc5935!2zUHVjw7NuLCBQdWNvbiwgQXJhdWNhbsOtYSwgQ2hpbGU!3m2!1d-39.278114699999996!2d-71.96930379999999!4m5!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Chile!3m2!1d-33.448889699999995!2d-70.6692655!5e0!3m2!1spt-BR!2sbr!4v1749032202049!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="iframe-container" id="alt-iframe10">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d14244610.854374768!2d-70.67922764363153!3d-29.350132414299825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Chile!3m2!1d-33.448889699999995!2d-70.6692655!4m5!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%20Department%2C%20Mendoza%2C%20Argentina!3m2!1d-32.8894587!2d-68.8458386!4m5!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmEsIEPDs3Jkb3ZhLCBBcmdlbnRpbmE!3m2!1d-31.420083299999998!2d-64.1887761!4m5!1s0x95addd27e22982a9%3A0x68fc0fac8ca73bc7!2sSalto%2C%20Uruguai!3m2!1d-31.3879469!2d-57.961186999999995!4m5!1s0x94fe9091a97f35f1%3A0x5f576c0ad8e18ca8!2sSanto%20%C3%82ngelo%2C%20RS!3m2!1d-28.3001866!2d-54.2658317!4m5!1s0x94ddd4985340f3b7%3A0x693099358d9f99d7!2sS%C3%A3o%20Bento%20do%20Sul%2C%20SC!3m2!1d-26.2497682!2d-49.3839372!5e0!3m2!1spt-BR!2sbr!4v1749032261444!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="iframe-container" id="iframe5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d104734.26768114508!2d-56.180028585388214!3d-34.88270567660002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x959f81c794fb9e1d%3A0x8c55deba02008e54!2sIbis%20Montevid%C3%A9u%2C%20La%20Cumparsita%201473%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguai!3m2!1d-34.913981199999995!2d-56.1824254!4m5!1s0x959f87e117a691e3%3A0x223b5948614efdd0!2sAeropuerto%20Internacional%20De%20Carrasco%2C%20Ruta%20101-Capitan%20Juan%20Antonio%20Artigas%2C%20Ciudad%20de%20la%20Costa%20Canelones%2C%20Uruguai!3m2!1d-34.837096599999995!2d-56.016179799999996!5e0!3m2!1spt-BR!2sbr!4v1749052140764!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </div>
